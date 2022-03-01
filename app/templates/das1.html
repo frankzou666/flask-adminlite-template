@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %} Dashboard 1 {% endblock title %}
+
+{% block stylesheets %}
+  {{ super() }}
+{% endblock stylesheets %}
+
+{% block content %}
+
+
+<div class="right_col" role="main">
+      <div class="row">
+
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <h1>this is das1</h1>
+        </div>
+
+      </div>
+</div>
+{% endblock content %}
+
+{% block javascripts %}
+  {{ super()}}
+  <!-- Chart.js -->
+  <script src="{{ url_for('static', filename='js/Chart.min.js') }}"></script>
+  <!-- gauge.js -->
+  <script src="{{ url_for('static', filename='js/gauge.min.js') }}"></script>
+  <!-- Skycons -->
+  <script src="{{ url_for('static', filename='js/skycons.js') }}"></script>
+  <!-- Flot -->
+  <script src="{{ url_for('static', filename='js/jquery.flot.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.flot.pie.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.flot.time.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.flot.stack.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.flot.resize.js') }}"></script>
+  <!-- Flot plugins -->
+  <script src="{{ url_for('static', filename='js/jquery.flot.orderBars.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.flot.spline.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/curvedLines.js') }}"></script>
+  <!-- DateJS -->
+  <script src="{{ url_for('static', filename='js/date.js') }}"></script>
+  <!-- JQVMap -->
+  <script src="{{ url_for('static', filename='js/jquery.vmap.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.vmap.world.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/jquery.vmap.sampledata.js') }}"></script>
+{% endblock javascripts %}
